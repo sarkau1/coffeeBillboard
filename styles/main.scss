@@ -1,0 +1,189 @@
+$mainColor: orange;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+  color: $mainColor;
+}
+
+.coffeeList {
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1a0529;
+}
+.App {
+  background: #332a4c;
+  margin: 20px auto;
+  width: 90%;
+  color: #eee;
+}
+.navbar {
+  padding: 10px 20px;
+  text-align: center;
+  background: #070316;
+}
+.navbar h1 {
+  margin: 10px 0;
+}
+.coffeeList {
+  text-align: center;
+}
+.none {
+  text-align: center;
+}
+.coffee-list {
+  margin: 20px;
+}
+
+.card .title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+.card .price {
+  font-size: 0.9em;
+  color: #ddd;
+  margin-left: 5px;
+}
+.empty {
+  margin: 20px;
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+}
+input[type='text'] {
+  width: 55%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #3c1f3c;
+  color: #fff;
+  border: 0;
+  margin: 10px auto;
+  display: block;
+}
+input[type='submit'] {
+  margin: 10px auto;
+
+  display: block;
+}
+button {
+  margin-left: 180px;
+  width: 45%;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.grid-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.card {
+  background-color: rgb(128, 20, 20);
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 50px;
+  height: 85%;
+  min-width: 300px;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: auto;
+}
+.card img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.card .container {
+  border-radius: 5px;
+}
+
+.grid {
+  overflow: visible;
+}
+@media (max-width: 1300px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (max-width: 1108px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .card {
+    max-width: 400px;
+  }
+}
+//-----------sass button styles----------------
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+.remove-btn {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: -20px;
+  border-radius: 3px;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5em;
+  max-width: 135px;
+}
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+}
+
+.btn-green {
+  @include button-bg(#2ecc71);
+}
+
+.btn-red {
+  @include button-bg(#e74c3c);
+}
