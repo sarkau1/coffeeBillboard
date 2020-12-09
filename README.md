@@ -1,4 +1,4 @@
-# YouTube Super Simple webpack Example
+# Coffee billboard using React and webpack
 
 After cloning / downloading / forking this repoistory you just need to have a command-line pointing inside this overall directory and use the `npm install` command.
 
